@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerPokemonsFragment">
+
+
+    <fragment
+        android:id="@+id/recyclerPokemonsFragment"
+        android:name="dev.davveg.recyclerview_final.RecyclerPokemonsFragment"
+        android:label="fragment_recycler_pokemons"
+        tools:layout="@layout/fragment_recycler_pokemons" >
+        <action
+            android:id="@+id/action_recyclerPokemonsFragment_to_mostrarPokemonFragment"
+            app:destination="@id/mostrarPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarPokemonFragment"
+        android:name="dev.davveg.recyclerview_final.MostrarPokemonFragment"
+        android:label="fragment_mostrar_pokemon"
+        tools:layout="@layout/fragment_mostrar_pokemon" />
+</navigation>
